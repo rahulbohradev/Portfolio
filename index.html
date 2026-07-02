@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Rahul Bohra — Frontend Developer & BSc IT Student from Mumbai. Building clean, modern web experiences. Open to Frontend & Flutter internships." />
+  <meta name="keywords"
+    content="Rahul Bohra, Frontend Developer, Flutter Developer, BSc IT, Mumbai, Portfolio, Web Developer, Internship" />
+  <meta name="author" content="Rahul Bohra" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rahul Bohra — Frontend Developer" />
+  <meta property="og:description"
+    content="BSc IT student from Mumbai building modern web experiences. Open to Frontend & Flutter internships." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rahulbohradev.github.io" />
+  <meta property="og:image" content="assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rahul Bohra — Frontend Developer" />
+  <meta name="twitter:description" content="BSc IT student from Mumbai. Frontend & Flutter Developer." />
+
+  <title>Rahul Bohra — Frontend Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="D:\portfolio\favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">RB</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RB<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#github" class="nav-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="D:\portfolio\Rahul_Bohra_Resume.pdf" class="nav-cta" target="_blank" rel="noopener">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+        <button id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+        <span class="badge-dot"></span>
+        Open to Internships — Frontend & Flutter
+      </div>
+
+      <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">
+        Rahul<br /><span class="name-gradient">Bohra</span>
+      </h1>
+
+      <div class="hero-role" data-aos="fade-up" data-aos-delay="400">
+        <span class="role-prefix">I build as a </span>
+        <span id="typed-text" class="typed-role"></span>
+        <span class="typed-cursor">|</span>
+      </div>
+
+      <p class="hero-bio" data-aos="fade-up" data-aos-delay="500">
+        BSc IT student at VES College, Mumbai — crafting modern responsive websites, learning Flutter, 
+        and building real-world projects to strengthen my development skills.
+      </p>
+
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+        <a href="#projects" class="btn btn-primary magnetic">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="assets/resume/Rahul_Bohra_Resume.pdf" class="btn btn-secondary magnetic" target="_blank"
+          rel="noopener">
+          <span>Download Resume</span>
+          <i class="fas fa-download"></i>
+        </a>
+      </div>
+
+      <div class="hero-socials" data-aos="fade-up" data-aos-delay="700">
+        <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/rahul-bohra-43b078387" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:rahul.bohra.5575381@ves.ac.in" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Who I am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-image-wrapper">
+            <!-- <div class="about-image-placeholder">
+              <div class="image-initials">RB</div>
+              <p class="image-note">Replace with your photo</p>
+            </div> -->
+            <img src="D:\portfolio\Rahull.png" alt="Rahul Bohra" class="about-image" />
+            <div class="about-image-glow"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+              <span class="stat-num counter" data-target="3">0</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+              <span class="stat-num counter" data-target="5">0</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+              <span class="stat-num">2nd</span>
+              <span class="stat-label">Year Undergrad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col" data-aos="fade-left" data-aos-delay="100">
+          <p class="about-text">
+            I'm a <strong>second-year BSc IT student</strong> at VES College of Arts, Science &amp; Commerce, Mumbai —
+            building modern web applications and currently expanding my expertise into cross-platform mobile development using Flutter.
+          </p>
+          <p class="about-text">
+            I started with Python and C in my first year, moved into full-stack web with PHP and JavaScript, and now
+            I'm expanding into Flutter and NoSQL databases. Every project strengthens my problem-solving skills and helps me become a better developer.
+          </p>
+
+          <!-- Education Timeline -->
+          <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="timeline-heading">Education</h3>
+            <div class="timeline-item">
+              <div class="timeline-dot active"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2026– Present</span>
+                <h4>B.Sc. Information Technology</h4>
+                <p>VES College of Arts, Science &amp; Commerce, Mumbai</p>
+                <span class="timeline-badge">Currently SYIT (2nd Year)</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+                <h4>HSC</h4>
+                <p>VES, Mumbai</p>
+                <span class="timeline-badge">74.6%</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2023</span>
+                <h4>SSC</h4>
+                <p>VES, Mumbai</p>
+                <span class="timeline-badge">80.80%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Goals -->
+          <div class="goals-card" data-aos="fade-up" data-aos-delay="300">
+            <h3><i class="fas fa-bullseye"></i> Current Goals</h3>
+            <ul class="goals-list">
+              <li><i class="fas fa-check-circle"></i> Secure a Frontend Development Internship</li>
+              <li><i class="fas fa-check-circle"></i> Build my first production Flutter app</li>
+              <li><i class="fas fa-check-circle"></i> Deepen knowledge in MongoDB and NoSQL</li>
+              <li><i class="fas fa-check-circle"></i> Contribute to open source projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">What I work with</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Web Development -->
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-group-title">
+            <i class="fas fa-code"></i> Web Development
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon html">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon css">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon js">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon php">
+                <i class="fab fa-php"></i>
+              </div>
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="skills-group-title">
+            <i class="fas fa-terminal"></i> Languages
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon py">
+                <i class="fab fa-python"></i>
+              </div>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon cpp">
+                <span class="skill-text-icon">C++</span>
+              </div>
+              <span>C / C++</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon sql">
+                <i class="fas fa-database"></i>
+              </div>
+              <span>SQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon bash">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <span>Bash</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile / Learning -->
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skills-group-title">
+            <i class="fas fa-mobile-alt"></i> Currently Learning
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card learning">
+              <div class="skill-icon flutter">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <span>Flutter</span>
+              <span class="learning-badge">Learning</span>
+            </div>
+            <div class="skill-card learning">
+              <div class="skill-icon dart">
+                <span class="skill-text-icon">Dart</span>
+              </div>
+              <span>Dart</span>
+              <span class="learning-badge">Learning</span>
+            </div>
+            <div class="skill-card learning">
+              <div class="skill-icon mongo">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <span>MongoDB</span>
+              <span class="learning-badge">Learning</span>
+            </div>
+            <div class="skill-card learning">
+              <div class="skill-icon java">
+                <i class="fab fa-java"></i>
+              </div>
+              <span>Java</span>
+              <span class="learning-badge">Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="250">
+          <h3 class="skills-group-title">
+            <i class="fas fa-tools"></i> Tools & Platforms
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon git">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon gh">
+                <i class="fab fa-github"></i>
+              </div>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon vscode">
+                <i class="fas fa-code"></i>
+              </div>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon linux">
+                <i class="fab fa-linux"></i>
+              </div>
+              <span>Linux CLI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Restaurant Management -->
+        <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-featured-tag">⭐ Featured</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-year">2024</span>
+                <div class="project-tags">
+                  <span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                </div>
+              </div>
+              <h3 class="project-title">Restaurant Management Website</h3>
+              <p class="project-desc">
+                Full-stack, mobile-responsive restaurant website with a PHP backend handling dynamic content rendering,
+                user form submissions, session management, and cookie handling. Clean, device-adaptive frontend.
+              </p>
+              <ul class="project-highlights">
+                <li>Session management &amp; PHP superglobals</li>
+                <li>Cross-browser compatible frontend</li>
+                <li>Responsive across all devices</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener" class="project-btn btn-gh">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="project-btn btn-demo disabled">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Student-Teacher Management -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <i class="fas fa-users-cog"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-year">2024</span>
+                <div class="project-tags">
+                  <span>Bash</span><span>Shell Scripting</span><span>Linux</span>
+                </div>
+              </div>
+              <h3 class="project-title">Student-Teacher Management System</h3>
+              <p class="project-desc">
+                CLI-based record management system using Bash scripting to automate CRUD operations.
+                Reduced manual overhead with scripted search, insert, update, and delete workflows. Built in a team.
+              </p>
+              <ul class="project-highlights">
+                <li>Automated CRUD via Bash scripts</li>
+                <li>Modular, collaborative script design</li>
+                <li>Linux filesystem operations</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/rahulbohradev/Student_Teacher_Management" target="_blank" rel="noopener"
+                  class="project-btn btn-gh">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="project-btn btn-demo disabled" title="CLI project — no live demo">
+                  <i class="fas fa-terminal"></i> CLI Project
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Snake Game -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <i class="fas fa-gamepad"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-year">2023</span>
+                <div class="project-tags">
+                  <span>Python</span><span>OOP</span>
+                </div>
+              </div>
+              <h3 class="project-title">Snake Game</h3>
+              <p class="project-desc">
+                Fully playable Snake Game with real-time keyboard input, dynamic score tracking, and collision
+                detection.
+                Applied OOP principles and iterative debugging for a stable, responsive gameplay experience.
+              </p>
+              <ul class="project-highlights">
+                <li>Real-time input handling</li>
+                <li>Dynamic score tracking</li>
+                <li>Collision detection logic</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener" class="project-btn btn-gh">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="project-btn btn-demo disabled" title="Desktop Python app">
+                  <i class="fab fa-python"></i> Desktop App
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Placeholder — Flutter -->
+        <article class="project-card placeholder" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card-inner">
+            <div class="project-image">
+              <div class="project-img-placeholder">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <div class="project-overlay">
+                <span class="project-coming-tag">🚧 Coming Soon</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <div class="project-tags">
+                  <span>Flutter</span><span>Dart</span><span>Firebase</span>
+                </div>
+              </div>
+              <h3 class="project-title">Flutter Mobile App <span class="placeholder-tag">Placeholder</span></h3>
+              <p class="project-desc">
+                Currently learning Flutter &amp; Dart. First cross-platform mobile app in progress —
+                update this card when ready to deploy. Add your app name, description, and screenshots here.
+              </p>
+              <div class="project-actions">
+                <span class="project-btn btn-gh disabled">
+                  <i class="fab fa-github"></i> Coming Soon
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB SECTION ===== -->
+  <section id="github" class="section github-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Open Source</span>
+        <h2 class="section-title">GitHub Activity</h2>
+      </div>
+
+      <div class="github-profile-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="github-avatar">
+          <img src="https://avatars.githubusercontent.com/u/264670742?v=4" alt="Rahul Bohra GitHub Avatar"
+            loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="avatar-fallback" style="display:none">RB</div>
+        </div>
+        <div class="github-profile-info">
+          <h3>rahulXdev</h3>
+          <p class="github-handle">@rahulbohradev</p>
+          <p class="github-bio">Code • Learn • Build 🚀</p>
+          <div class="github-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+          </div>
+        </div>
+        <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener"
+          class="btn btn-primary github-follow-btn magnetic">
+          <i class="fab fa-github"></i> View Profile
+        </a>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="github-stats-row">
+        <div class="github-stat-card" data-aos="zoom-in" data-aos-delay="100">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=rahulbohradev&show_icons=true&theme=transparent&title_color=7c3aed&icon_color=06b6d4&text_color=e2e8f0&border_color=334155&hide_border=false&count_private=true&bg_color=0f172a"
+            alt="Rahul's GitHub Stats" loading="lazy" class="github-stat-img"
+            onerror="this.parentElement.innerHTML='<div class=\'stat-fallback\'><i class=\'fab fa-github\'></i><p>GitHub Stats</p><span>Visit profile to view live stats</span></div>'" />
+        </div>
+        <div class="github-stat-card" data-aos="zoom-in" data-aos-delay="200">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulbohradev&layout=compact&theme=transparent&title_color=7c3aed&icon_color=06b6d4&text_color=e2e8f0&border_color=334155&bg_color=0f172a"
+            alt="Rahul's Top Languages" loading="lazy" class="github-stat-img"
+            onerror="this.parentElement.innerHTML='<div class=\'stat-fallback\'><i class=\'fab fa-github\'></i><p>Top Languages</p><span>Shell • HTML • Python</span></div>'" />
+        </div>
+      </div>
+
+      <!-- Repos -->
+      <div class="repos-grid">
+        <div class="repo-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="repo-header">
+            <i class="fas fa-book-open repo-icon"></i>
+            <a href="https://github.com/rahulbohradev/Student_Teacher_Management" target="_blank" rel="noopener"
+              class="repo-name">
+              Student_Teacher_Management
+            </a>
+            <span class="repo-visibility">Public</span>
+          </div>
+          <p class="repo-desc">CLI-based record management system using Bash scripting. CRUD automation for student and
+            teacher data on Linux.</p>
+          <div class="repo-footer">
+            <span class="repo-lang"><span class="lang-dot shell"></span>Shell</span>
+          </div>
+        </div>
+
+        <div class="repo-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="repo-header">
+            <i class="fas fa-book-open repo-icon"></i>
+            <a href="https://github.com/rahulbohradev/mern-landing-page" target="_blank" rel="noopener"
+              class="repo-name">
+              mern-landing-page
+            </a>
+            <span class="repo-visibility">Public</span>
+          </div>
+          <p class="repo-desc">A landing page project exploring modern HTML and frontend development patterns.</p>
+          <div class="repo-footer">
+            <span class="repo-lang"><span class="lang-dot html"></span>HTML</span>
+          </div>
+        </div>
+
+        <div class="repo-card repo-placeholder" data-aos="fade-up" data-aos-delay="300">
+          <div class="repo-header">
+            <i class="fas fa-plus-circle repo-icon"></i>
+            <span class="repo-name">More coming soon…</span>
+          </div>
+          <p class="repo-desc">Flutter apps, web projects, and more are actively in development. Watch the GitHub
+            profile.</p>
+          <div class="repo-footer">
+            <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener" class="repo-link">
+              <i class="fab fa-github"></i> Follow for updates
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contribution Graph -->
+      <div class="contrib-section" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="contrib-title">Contribution Activity</h3>
+        <div class="contrib-graph-wrapper">
+          <img src="https://ghchart.rshah.org/7c3aed/rahulbohradev" alt="Rahul's contribution graph" loading="lazy"
+            class="contrib-img"
+            onerror="this.parentElement.innerHTML='<div class=\'contrib-fallback\'><i class=\'fas fa-chart-bar\'></i><p>Contribution graph loads from GitHub</p></div>'" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEARNING / ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section achievements">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">The Journey</span>
+        <h2 class="section-title">Learning & Achievements</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="achievement-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>3 Projects Shipped</h3>
+          <p>Independently conceptualized, developed, and deployed three end-to-end software projects spanning web
+            development, systems programming, and application development.</p>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="achievement-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Multi-Stack Adaptability</h3>
+          <p>Acquired proficiency in Python, PHP, Bash, C++, and JavaScript concurrently with academic coursework —
+            applying each in distinct, functional project contexts.</p>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="achievement-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>Public GitHub Portfolio</h3>
+          <p>Maintains a well-documented public GitHub portfolio with version-controlled repositories, reflecting
+            consistent coding activity and a disciplined approach to progress tracking.</p>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="achievement-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Continuous Learning</h3>
+          <p>Proactively pursuing Flutter, MongoDB, and Java beyond the core curriculum — extending capabilities into
+            mobile development and modern database paradigms.</p>
+        </div>
+      </div>
+
+      <!-- Learning Stack -->
+      <div class="learning-stack" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="learning-stack-title">Currently Studying</h3>
+        <div class="learning-items">
+          <div class="learning-item">
+            <i class="fab fa-java"></i>
+            <div>
+              <strong>Java Programming</strong>
+              <p>OOP, Collections, Exception Handling</p>
+            </div>
+          </div>
+          <div class="learning-item">
+            <i class="fas fa-layer-group"></i>
+            <div>
+              <strong>Flutter Development</strong>
+              <p>Cross-platform mobile UI with Dart &amp; Flutter SDK</p>
+            </div>
+          </div>
+          <div class="learning-item">
+            <i class="fas fa-leaf"></i>
+            <div>
+              <strong>MongoDB Fundamentals</strong>
+              <p>Document-oriented design &amp; NoSQL query principles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Let's connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          Looking for Frontend or Flutter internship opportunities. Open to freelance collaborations and project ideas.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-link-card">
+            <a href="mailto:rahul.bohra.5575381@ves.ac.in" class="contact-link-item">
+              <div class="contact-link-icon email-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span>Email</span>
+                <strong>rahul.bohra.5575381@ves.ac.in</strong>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+          <div class="contact-link-card">
+            <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon github-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <span>GitHub</span>
+                <strong>@rahulbohradev</strong>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+          <div class="contact-link-card">
+            <a href="https://linkedin.com/in/rahul-bohra-43b078387" target="_blank" rel="noopener"
+              class="contact-link-item">
+              <div class="contact-link-icon linkedin-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div>
+                <span>LinkedIn</span>
+                <strong>Rahul Bohra</strong>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+          <div class="contact-link-card">
+            <a href="tel:+919920243171" class="contact-link-item">
+              <div class="contact-link-icon phone-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <span>Phone</span>
+                <strong>+91 9920243171</strong>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-col" data-aos="fade-left" data-aos-delay="100">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full magnetic">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-note">
+              <i class="fas fa-lock"></i> Your info stays private. No spam.
+            </p>
+          </form>
+          <div id="form-success" class="form-success" style="display:none">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>RB<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Building on the web, learning every day.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/rahulbohradev" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/rahul-bohra-43b078387" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:rahul.bohra.5575381@ves.ac.in" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Rahul Bohra. Crafted with care.
+        </p>
+      </div>
+    </div>
+    <a href="#home" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
